@@ -4,9 +4,8 @@ import "./styles/navbar.scss";
 
 const NavBar = () => {
 
-    const smoothScrollTo = (e: { preventDefault: () => void; }) => {
-        e.preventDefault();
-        const element = document.getElementById('about, skills, journey, gallery, contact');
+    const smoothScrollTo = (e: string) => {
+        const element = document.getElementById(e);
         element?.scrollIntoView({
             block: 'start',
             behavior: 'smooth' // smooth scroll
@@ -37,37 +36,37 @@ const NavBar = () => {
                     <ul className="nav_list grid">
                         {/* <Link activeClass='active-link' smooth spy to='about'> */}
                         <li className="nav_item">
-                            <a href="" className="nav_link" onClick={smoothScrollTo}>
+                            <div className="nav_link" onClick={() => smoothScrollTo('about')}>
                                 <i className="uil uil-user nav_icon"></i> About
-                            </a>
+                            </div>
                         </li>
                         {/* </Link>
                         <Link activeClass='active-link' smooth spy to='skills'> */}
                         <li className="nav_item">
-                            <a href="" className="nav_link" onClick={smoothScrollTo}>
+                            <div className="nav_link" onClick={() => smoothScrollTo('skills')}>
                                 <i className="uil uil-file-alt nav_icon"></i> Skills
-                            </a>
+                            </div>
                         </li>
                         {/* </Link>
                         <Link activeClass='active-link' smooth spy to='journey'> */}
                         <li className="nav_item">
-                            <a href="" className="nav_link" onClick={smoothScrollTo}>
+                            <div className="nav_link" onClick={() => smoothScrollTo('journey')}>
                                 <i className="uil uil-scenery nav_icon"></i> Journey
-                            </a>
+                            </div>
                         </li>
                         {/* </Link>
                         <Link activeClass='active-link' smooth spy to='gallery'> */}
                         <li className="nav_item">
-                            <a href="" className="nav_link" onClick={smoothScrollTo}>
+                            <div className="nav_link" onClick={() => smoothScrollTo('gallery')}>
                                 <i className="uil uil-images nav_icon"></i> Gallery
-                            </a>
+                            </div>
                         </li>
                         {/* </Link>
                         <Link activeClass='contact' smooth spy to='contact'> */}
                         <li className="nav_item">
-                            <a href="" className="nav_link" onClick={smoothScrollTo}>
+                            <div className="nav_link" onClick={() => smoothScrollTo('contact')}>
                                 <i className="uil uil-message nav_icon"></i> Contact
-                            </a>
+                            </div>
                         </li>
                         {/* </Link> */}
                         <li className="nav_item">

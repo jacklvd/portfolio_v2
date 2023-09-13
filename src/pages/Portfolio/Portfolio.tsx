@@ -1,5 +1,6 @@
 import NavBar from "../../components/NavBar";
 import About from "../../components/About";
+import Skills from "../../components/skills/Skills";
 
 const Portfolio = () => {
     return (
@@ -8,6 +9,7 @@ const Portfolio = () => {
 
             <main className="main">
                 <About />
+                <Skills />
             </main>
 
         </>
