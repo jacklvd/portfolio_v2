@@ -1,0 +1,28 @@
+.projects .project_more {
+    color: var(--title-color-dark);
+    font-size: var(--h3-font-size);
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.projects .project_source {
+    display: inline-block;
+    border-radius: 0.3rem;
+    border: 0.5px solid var(--title-color-dark);
+    color: var(--title-color-dark);
+    // font-size: var(--normal-font-size);
+    padding: calc(0.2em - 4px) calc(0.8em - 4px);
+    box-shadow: 4px 4px 2px 1px var(--shadow-color);
+    cursor: pointer;
+    a {
+        color: var(--title-color-dark);
+    }
+}
+
+.projects .project_source:hover {
+    background-color: var(--custom-box-color);
+    color: var(--container-color);
+    a {
+        color: var(--container-color);
+    }
+}

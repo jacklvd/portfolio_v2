@@ -1,6 +1,5 @@
 import { createClient } from '@sanity/client';
 import imageBuilder from '@sanity/image-url';
-import { SanityImageSource } from '@sanity/image-url/lib/types/types';
 
 export const client = createClient({
     projectId: import.meta.env.VITE_PROJECT_ID as string,
@@ -13,4 +12,5 @@ export const client = createClient({
 
 const builder = imageBuilder(client);
 
-export const urlFor = (source: SanityImageSource) => builder.image(source);
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export const urlFor = (source: any) => builder.image(source);

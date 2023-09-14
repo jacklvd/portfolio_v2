@@ -34,41 +34,31 @@ const NavBar = () => {
 
                 <div className={Toggle ? "nav_menu show-menu" : "nav_menu"}>
                     <ul className="nav_list grid">
-                        {/* <Link activeClass='active-link' smooth spy to='about'> */}
                         <li className="nav_item">
                             <div className="nav_link" onClick={() => smoothScrollTo('about')}>
                                 <i className="uil uil-user nav_icon"></i> About
                             </div>
                         </li>
-                        {/* </Link>
-                        <Link activeClass='active-link' smooth spy to='skills'> */}
-                        <li className="nav_item">
-                            <div className="nav_link" onClick={() => smoothScrollTo('skills')}>
-                                <i className="uil uil-file-alt nav_icon"></i> Skills
-                            </div>
-                        </li>
-                        {/* </Link>
-                        <Link activeClass='active-link' smooth spy to='journey'> */}
                         <li className="nav_item">
                             <div className="nav_link" onClick={() => smoothScrollTo('journey')}>
                                 <i className="uil uil-scenery nav_icon"></i> Journey
                             </div>
                         </li>
-                        {/* </Link>
-                        <Link activeClass='active-link' smooth spy to='gallery'> */}
+                        <li className="nav_item">
+                            <div className="nav_link" onClick={() => smoothScrollTo('work')}>
+                                <i className="uil uil-file-alt nav_icon"></i> Work
+                            </div>
+                        </li>
                         <li className="nav_item">
                             <div className="nav_link" onClick={() => smoothScrollTo('gallery')}>
                                 <i className="uil uil-images nav_icon"></i> Gallery
                             </div>
                         </li>
-                        {/* </Link>
-                        <Link activeClass='contact' smooth spy to='contact'> */}
                         <li className="nav_item">
                             <div className="nav_link" onClick={() => smoothScrollTo('contact')}>
                                 <i className="uil uil-message nav_icon"></i> Contact
                             </div>
                         </li>
-                        {/* </Link> */}
                         <li className="nav_item">
                             <a href="https://drive.google.com/file/d/1RuUkVwUtv5crPAh-cS6EjJ1UAL4xw2Yd/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="nav_link">
                                 <i className="uil uil-folder nav_icon"></i> Resume
