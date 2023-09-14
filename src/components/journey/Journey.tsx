@@ -100,8 +100,8 @@ const Journey = () => {
                                             <i className="uil uil-calendar-alt"></i> {experience.date}
                                         </div>
                                         <ul>
-                                            {experience.description.map((detail: any) => (
-                                                <li className="experience_detail">{detail}</li>
+                                            {experience.description.map((detail: any, i: number) => (
+                                                <li className="experience_detail" key={i + 1}>{detail}</li>
                                             ))}
                                         </ul>
                                     </div>

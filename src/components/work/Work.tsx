@@ -23,9 +23,12 @@ const Work = () => {
                         <li className="card" id={`card_${work.id}`} key={work._id}>
                             <div className="card__content">
                                 <div>
-                                    <h2>{work.title}</h2>
-                                    <p>{work.description}</p>
-                                    <p><a href={work.source} className="btn btn--accent">Read more</a></p>
+                                    <h2 className='work_title'>{work.title}</h2>
+                                    <p className='work_description'>{work.description}</p>
+                                    <p>
+                                        <a href={work.source} className="btn btn--accent">SOURCE <i className="fa-brands fa-square-github work_button-icon"></i>
+                                        </a>
+                                    </p>
                                 </div>
                                 <figure>
                                     <img src={urlFor(work.image).url()} alt={work.title} />
