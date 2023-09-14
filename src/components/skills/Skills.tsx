@@ -13,6 +13,7 @@ const Skills = () => {
                 <Frontend />
                 <Backend />
                 <Tools />
+
             </div>
         </section>
     );

@@ -1,6 +1,7 @@
 import NavBar from "../../components/NavBar";
 import About from "../../components/About";
 import Skills from "../../components/skills/Skills";
+import Journey from "../../components/journey/Journey";
 
 const Portfolio = () => {
     return (
@@ -10,6 +11,7 @@ const Portfolio = () => {
             <main className="main">
                 <About />
                 <Skills />
+                <Journey />
             </main>
 
         </>
