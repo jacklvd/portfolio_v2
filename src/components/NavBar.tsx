@@ -50,8 +50,8 @@ const NavBar = () => {
                             </div>
                         </li>
                         <li className="nav_item">
-                            <div className="nav_link" onClick={() => smoothScrollTo('gallery')}>
-                                <i className="uil uil-images nav_icon"></i> Gallery
+                            <div className="nav_link" onClick={() => smoothScrollTo('polaroid')}>
+                                <i className="uil uil-images nav_icon"></i> Polaroid
                             </div>
                         </li>
                         <li className="nav_item">

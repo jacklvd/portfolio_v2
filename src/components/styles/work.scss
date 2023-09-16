@@ -103,7 +103,7 @@
   outline: calc(var(--outline-width) * 10) solid blue;
   display: grid;
   grid-template-columns: 1fr;
-  //   grid-template-rows: repeat(var(--numcards), var(--card-height));
+  // grid-template-rows: repeat(var(--numcards), var(--card-height));
   grid-template-rows: repeat(var(--numcards));
   gap: var(--card-margin);
 }
@@ -151,8 +151,10 @@
   filter: grayscale(1);
 }
 
-.card__content > figure > img:hover {
-  filter: grayscale(0);
+.card__content:hover {
+  img {
+    filter: grayscale(0);
+  }
 }
 
 .btn {

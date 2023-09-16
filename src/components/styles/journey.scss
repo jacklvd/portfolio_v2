@@ -101,6 +101,7 @@ ul .experience_detail {
   position: relative;
   background-color: inherit;
   width: 50%;
+  cursor: default;
 }
 
 // /* The circles on the timeline */
@@ -181,143 +182,6 @@ ul .experience_detail {
   border-radius: 6px;
 }
 
-// .timeline {
-//     position: relative;
-//     width: 100%;
-//     max-width: 1140px;
-//     margin: 0 auto;
-//     padding: 15px 0;
-// }
-
-// .timeline::after {
-//     content: '';
-//     position: absolute;
-//     width: 4px;
-//     background: var(--text-color);
-//     top: 0;
-//     bottom: 0;
-//     left: 50%;
-//     margin-left: -1px;
-// }
-
-// .container_experience {
-//     padding: 15px 30px;
-//     position: relative;
-//     background: inherit;
-//     width: 50%;
-// }
-
-// .container_experience.left {
-//     left: 0;
-// }
-
-// .container_experience.right {
-//     left: 50%;
-// }
-
-// .container_experience::after {
-//     content: '';
-//     position: absolute;
-//     width: 16px;
-//     height: 16px;
-//     top: calc(50% - 10px);
-//     right: -9.5px;
-//     background: #fff;
-//     border: 2px solid var(--text-color);
-//     border-radius: 16px;
-//     z-index: 1;
-// }
-
-// .container_experience.right::after {
-//     left: -9px;
-// }
-
-// .container_experience::before {
-//     content: '';
-//     position: absolute;
-//     width: 50px;
-//     height: 3px;
-//     top: calc(50% - 2px);
-//     right: 10px;
-//     background: var(--text-color);
-//     z-index: 1;
-// }
-
-// .container_experience.right::before {
-//     left: 8px;
-// }
-
-// .container_experience .date {
-//     position: absolute;
-//     display: inline-block;
-//     top: calc(50% - 8px);
-//     text-align: center;
-//     font-size: 14px;
-//     font-weight: bold;
-//     color: var(--text-color);
-//     text-transform: uppercase;
-//     letter-spacing: 1px;
-//     z-index: 1;
-// }
-
-// .container_experience.left .date {
-//     right: -75px;
-// }
-
-// .container_experience.right .date {
-//     left: -75px;
-// }
-
-// .container_experience .experience_icon {
-//     position: absolute;
-//     display: inline-block;
-//     width: 40px;
-//     height: 40px;
-//     padding: 11px 0;
-//     top: calc(50% - 20px);
-//     background: var(--custom-box-color);
-//     border: 2px solid #fff;
-//     border-radius: 40px;
-//     text-align: center;
-//     font-size: 18px;
-//     color: #fff;
-//     z-index: 1;
-// }
-
-// .container_experience.left .experience_icon {
-//     right: 56px;
-// }
-
-// .container_experience.right .experience_icon {
-//     left: 56px;
-// }
-
-// .container_experience .content {
-//     padding: 30px 90px 30px 30px;
-//     background: #F6D155;
-//     position: relative;
-//     border-radius: 0 500px 500px 0;
-// }
-
-// .container_experience.right .content {
-//     padding: 30px 30px 30px 90px;
-//     border-radius: 500px 0 0 500px;
-// }
-
-// .container_experience .content h2 {
-//     margin: 0 0 10px 0;
-//     font-size: 18px;
-//     font-weight: normal;
-//     color: #006E51;
-// }
-
-// .container_experience .content p {
-//     margin: 0;
-//     font-size: 16px;
-//     line-height: 22px;
-//     color: #000000;
-// }
-
 /*============== BREAKPOINTS ==============*/
 
 /* for large devices */
@@ -327,51 +191,6 @@ ul .experience_detail {
     margin-right: auto;
   }
 }
-
-// @media (max-width: 767.98px) {
-//     .timeline::after {
-//       left: 90px;
-//     }
-
-//     .container_experience {
-//       width: 100%;
-//       padding-left: 120px;
-//       padding-right: 30px;
-//     }
-
-//     .container_experience.right {
-//       left: 0%;
-//     }
-
-//     .container_experience.left::after,
-//     .container_experience.right::after {
-//       left: 82px;
-//     }
-
-// .container_experience.left::before,
-// .container_experience.right::before {
-//   left: 100px;
-//   border-color: transparent var(--custom-box-color) transparent transparent;
-// }
-
-// .container_experience.left .date,
-// .container_experience.right .date {
-//   right: auto;
-//   left: 15px;
-// }
-
-// .container_experience.left .experience_icon,
-// .container_experience.right .experience_icon {
-//   right: auto;
-//   left: 146px;
-// }
-
-//     .container_experience.left .content,
-//     .container_experience.right .content {
-//       padding: 30px 30px 30px 90px;
-//       border-radius: 500px 0 0 500px;
-//     }
-// }
 
 /* for medium devices */
 @media screen and (max-width: 695px) {

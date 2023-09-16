@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { motion } from "framer-motion";
-import Hero from "../assets/images/hero.png";
-import Resume from "../assets/files/Resume.pdf";
-import "./styles/about.scss"
+import Hero from "../../assets/images/hero.png";
+import Resume from "../../assets/files/Resume.pdf";
+import "../styles/about.scss"
 
 interface ReadMoreProps {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -69,7 +69,7 @@ const About = () => {
                     >
                         <Info />
                         <ReadMore>
-                            <span role="img">👋🏻</span> Hi, I'm Long, but also go by Jack. I'm a rising junior at the University of Cincinnati. I'm pursuing a BS degree in
+                            <span role="img">👋🏻</span> Hi, I'm Long, but also go by Jack. I'm a rising senior at the University of Cincinnati. I'm pursuing a BS degree in
                             Computer Science with an anticipated graduation in May 2025. I'm most passionate about solving real world problems,
                             advocating sustainability, and building community-driven applications.<br /><br />
                             <span role="img">✨</span> I appreciate every challenge I came across that helped cultivate my self-efficacy in this risk-taking world. At STEAM

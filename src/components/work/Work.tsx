@@ -11,8 +11,7 @@ const Work = () => {
     useEffect(() => {
         client.fetch('*[_type == "work"]').then((data) => setWorks(data))
             .catch(console.error);
-    }
-        , []);
+    }, []);
     return (
         <section className="projects section" id="work">
             <h2 className="section_title" style={{ color: "var(--title-color-dark)" }}>My Work</h2>
