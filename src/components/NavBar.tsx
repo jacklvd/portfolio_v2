@@ -60,7 +60,7 @@ const NavBar = () => {
                             </div>
                         </li>
                         <li className="nav_item">
-                            <a href="https://drive.google.com/file/d/1RuUkVwUtv5crPAh-cS6EjJ1UAL4xw2Yd/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="nav_link">
+                            <a href="https://drive.google.com/file/d/1CCvBSb8x1mBjsLrzZfoGrkdRRLByS_8t/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="nav_link">
                                 <i className="uil uil-folder nav_icon"></i> Resume
                             </a>
                         </li>
