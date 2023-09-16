@@ -1,3 +1,7 @@
+.polaroid_section {
+  background-color: var(--custom-color);
+}
+
 .hello {
   opacity: 1 !important;
 }
@@ -23,7 +27,7 @@
   border-radius: 8px;
   box-shadow: 0 0 16px #333;
   transition: all 0.6s ease;
-  filter: grayscale(1);
+  filter: saturate(40%) sepia(30%) hue-rotate(5deg);
   cursor: default;
 }
 
@@ -62,6 +66,12 @@
 @media (max-width: 720px) {
   .gallery {
     grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
   }
 }
 

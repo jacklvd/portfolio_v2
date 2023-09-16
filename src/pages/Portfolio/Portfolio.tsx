@@ -4,6 +4,7 @@ import Skills from "../../components/skills/Skills";
 import Journey from "../../components/journey/Journey";
 import Work from "../../components/work/Work";
 import Polaroids from "../../components/polaroid/Polaroids";
+import Contact from "../../components/contact/Contact";
 
 const Portfolio = () => {
     return (
@@ -16,6 +17,7 @@ const Portfolio = () => {
                 <Journey />
                 <Work />
                 <Polaroids />
+                <Contact />
             </main>
 
         </>

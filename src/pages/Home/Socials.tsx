@@ -5,7 +5,7 @@ function Social() {
     return (
         <div className="home_social">
             <motion.div
-                whileInView={{ x: [-100, 0], opacity: [0, 1] }}
+                whileInView={{ x: [-50, 0], opacity: [0, 1] }}
                 transition={{ duration: 0.7 }}
                 className="home_social"
             >

@@ -13,6 +13,13 @@ const Polaroids = () => {
     const [polaroids, setPolaroids] = useState<any[]>([]);
     const galleryRef = useRef<HTMLDivElement>(null);
 
+    const [animationComplete, setAnimationComplete] = useState(false);
+
+    // Callback for motion onComplete event
+    const handleAnimationComplete = () => {
+        setAnimationComplete(true);
+    };
+
     const getVal = (elem: HTMLElement, style: string) => parseInt(window.getComputedStyle(elem).getPropertyValue(style), 10);
 
     const getHeight = (item: HTMLElement | null) => {
@@ -50,23 +57,29 @@ const Polaroids = () => {
     return (
         <section className='section polaroid_section' id="polaroid">
             <h2 className="section_title" style={{ color: "var(--title-color-dark)" }}>Polaroids Album</h2>
-            <span className="section_subtitle">Some of my pictures</span>
+            <span className="section_subtitle">I'm lucky to be surrounded by amazing people</span>
             <div className='container gallery_container'>
                 <div className='gallery' id='gallery' ref={galleryRef}>
                     {polaroids.map((polaroid: any, index) => (
-
                         <div key={index} className='gallery-item'>
-                            <motion.div
-                                whileInView={{ opacity: [0, 1] }}
-                                transition={{ duration: 2.4, delayChildren: 1 }}
-                                className="gallery-item"
-                            >
+                            {animationComplete ? (
                                 <div className='content'>
                                     <img src={urlFor(polaroid.images).url()} alt={polaroid.title} onLoad={handleImageLoad} />
                                     <figcaption className='img_caption'>{polaroid.date}</figcaption>
                                 </div>
-                            </motion.div>
-
+                            ) : (
+                                <motion.div
+                                    whileInView={{ opacity: [0, 1] }}
+                                    transition={{ duration: 1.5, delayChildren: 1, ease: "easeInOut" }}
+                                    className="gallery-item"
+                                    onAnimationComplete={handleAnimationComplete}
+                                >
+                                    <div className='content'>
+                                        <img src={urlFor(polaroid.images).url()} alt={polaroid.title} onLoad={handleImageLoad} />
+                                        <figcaption className='img_caption'>{polaroid.date}</figcaption>
+                                    </div>
+                                </motion.div>
+                            )}
                         </div>
                     ))}
                 </div>
