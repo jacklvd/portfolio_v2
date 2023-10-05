@@ -1,10 +1,14 @@
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion'
 
 const Backend = () => {
     return (
-
         <div className="skills_content">
-            <h3 className="skills_title" style={{ color: "var(--title-color-dark)" }}>Backend Developer</h3>
+            <h3
+                className="skills_title"
+                style={{ color: 'var(--title-color-dark)' }}
+            >
+                Backend Developer
+            </h3>
 
             <div className="skills_box">
                 <motion.div
@@ -14,28 +18,32 @@ const Backend = () => {
                 >
                     <div className="skills_group">
                         <div className="skills_data">
-                            <i className='bx bxl-python skills_icon'></i>
+                            <i className="bx bxl-python skills_icon"></i>
                             <div>
                                 <h3 className="skills_name">Python</h3>
-                                <span className="skills_level">Proficiency</span>
+                                <span className="skills_level">
+                                    Proficiency
+                                </span>
                             </div>
                         </div>
                         <div className="skills_data">
-                            <i className='bx bxl-c-plus-plus skills_icon' ></i>
+                            <i className="bx bxl-c-plus-plus skills_icon"></i>
                             <div>
                                 <h3 className="skills_name">C++</h3>
-                                <span className="skills_level">Proficiency</span>
+                                <span className="skills_level">
+                                    Proficiency
+                                </span>
                             </div>
                         </div>
                         <div className="skills_data">
-                            <i className='bx bxl-django skills_icon'></i>
+                            <i className="bx bxl-django skills_icon"></i>
                             <div>
                                 <h3 className="skills_name">Django</h3>
                                 <span className="skills_level">Familiar</span>
                             </div>
                         </div>
                         <div className="skills_data">
-                            <i className='bx bxl-nodejs skills_icon'></i>
+                            <i className="bx bxl-nodejs skills_icon"></i>
                             <div>
                                 <h3 className="skills_name">NodeJS</h3>
                                 <span className="skills_level">Familiar</span>
@@ -45,10 +53,12 @@ const Backend = () => {
 
                     <div className="skills_group">
                         <div className="skills_data">
-                            <i className='bx bxl-java skills_icon'></i>
+                            <i className="bx bxl-java skills_icon"></i>
                             <div>
                                 <h3 className="skills_name">Java</h3>
-                                <span className="skills_level">Proficiency</span>
+                                <span className="skills_level">
+                                    Proficiency
+                                </span>
                             </div>
                         </div>
                         <div className="skills_data">
@@ -59,26 +69,24 @@ const Backend = () => {
                             </div>
                         </div>
                         <div className="skills_data">
-                            <i className='bx bxl-flask skills_icon'></i>
+                            <i className="bx bxl-flask skills_icon"></i>
                             <div>
                                 <h3 className="skills_name">Flask</h3>
                                 <span className="skills_level">Familiar</span>
                             </div>
                         </div>
                         <div className="skills_data">
-                            <i className='bx bxl-firebase skills_icon'></i>
+                            <i className="bx bxl-firebase skills_icon"></i>
                             <div>
                                 <h3 className="skills_name">FireBase</h3>
                                 <span className="skills_level">Familiar</span>
                             </div>
                         </div>
                     </div>
-
                 </motion.div>
-
             </div>
         </div>
-    );
-};
+    )
+}
 
-export default Backend;
+export default Backend
