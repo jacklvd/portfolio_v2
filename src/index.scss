@@ -1,71 +1,71 @@
 // GOOGLE FONTS
-@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Noto+Serif+Display:wght@200&family=Open+Sans&family=Playfair+Display&family=Poppins:wght@400;500;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Noto+Serif+Display:wght@200&family=Open+Sans&family=Playfair+Display&family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 // VARIABLES CSS
 
 :root {
-  --header-height: 3rem;
+    --header-height: 3rem;
 
-  // colors
-  // color mode HSL(hue, saturation, lightness)
-  --hue: 0;
-  --sat: 0%;
-  --title-color: hsl(var(--hue), var(--sat) ., 20%);
-  --title-color-dark: hsl(var(--hue), var(--sat), 0%);
-  --text-color: hsl(var(--hue), var(--sat), 46%);
-  --body-color: hsl(var(--hue), var(--sat), 98%);
-  --custom-color: #f6f5f4;
-  --shadow-color: #d5d8d6;
-  --custom-box-color: #303036;
-  --custom-text-color: #e8eaed;
-  --container-color: #fff;
+    // colors
+    // color mode HSL(hue, saturation, lightness)
+    --hue: 0;
+    --sat: 0%;
+    --title-color: hsl(var(--hue), var(--sat) ., 20%);
+    --title-color-dark: hsl(var(--hue), var(--sat), 0%);
+    --text-color: hsl(var(--hue), var(--sat), 46%);
+    --body-color: hsl(var(--hue), var(--sat), 98%);
+    --custom-color: #f6f5f4;
+    --shadow-color: #d5d8d6;
+    --custom-box-color: #303036;
+    --custom-text-color: #e8eaed;
+    --container-color: #fff;
 
-  // font and typography
-  --body-font: "Poppins", sans-serif;
-  --custom-font: "Roboto", sans-serif;
+    // font and typography
+    --body-font: 'Poppins', sans-serif;
+    --custom-font: 'Roboto', sans-serif;
 
-  // 0.5rem = 8px | 1rem = 16px
-  --big-font-size: 3.5rem;
-  --h1-font-size: 2.25rem;
-  --h2-font-size: 1.5rem;
-  --h3-font-size: 1.25rem;
-  --normal-font-size: 1rem;
-  --small-font-size: 0.875rem;
-  --smaller-font-size: 0.813rem;
-  --tiny-font-size: 0.685rem;
+    // 0.5rem = 8px | 1rem = 16px
+    --big-font-size: 3.5rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
+    --tiny-font-size: 0.685rem;
 
-  // font weight
-  --font-normal: 400;
-  --font-medium: 500;
-  --font-semi-bold: 600;
+    // font weight
+    --font-normal: 400;
+    --font-medium: 500;
+    --font-semi-bold: 600;
 
-  // margenes bottom
-  --mb-0-25: 0.25rem;
-  --mb-0-5: 0.5rem;
-  --mb-0-75: 0.75rem;
-  --mb-1: 1rem;
-  --mb-1-5: 1.5rem;
-  --mb-2: 2rem;
-  --mb-2-5: 2.5rem;
-  --mb-3: 3rem;
+    // margenes bottom
+    --mb-0-25: 0.25rem;
+    --mb-0-5: 0.5rem;
+    --mb-0-75: 0.75rem;
+    --mb-1: 1rem;
+    --mb-1-5: 1.5rem;
+    --mb-2: 2rem;
+    --mb-2-5: 2.5rem;
+    --mb-3: 3rem;
 
-  // z-index
-  --z-tooltip: 10;
-  --z-fixed: 100;
-  --z-modal: 1000;
+    // z-index
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 1000;
 }
 
 // Responsive typography
 
 @media screen and (max-width: 992px) {
-  :root {
-    --big-font-size: 2.75rem;
-    --h1-font-size: 1.5rem;
-    --h2-font-size: 1.25rem;
-    --h3-font-size: 1rem;
-    --normal-font-size: 0.938rem;
-    --small-font-size: 0.813rem;
-    --smaller-font-size: 0.75rem;
-  }
+    :root {
+        --big-font-size: 2.75rem;
+        --h1-font-size: 1.5rem;
+        --h2-font-size: 1.25rem;
+        --h3-font-size: 1rem;
+        --normal-font-size: 0.938rem;
+        --small-font-size: 0.813rem;
+        --smaller-font-size: 0.75rem;
+    }
 }

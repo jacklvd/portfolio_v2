@@ -1,9 +1,14 @@
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion'
 
 const Tools = () => {
     return (
         <div className="skills_content">
-            <h3 className="skills_title" style={{ color: "var(--title-color-dark)" }}>Developer Tools</h3>
+            <h3
+                className="skills_title"
+                style={{ color: 'var(--title-color-dark)' }}
+            >
+                Developer Tools
+            </h3>
 
             <div className="skills_box">
                 <motion.div
@@ -13,41 +18,51 @@ const Tools = () => {
                 >
                     <div className="skills_group">
                         <div className="skills_data">
-                            <i className='bx bxl-github skills_icon'></i>
+                            <i className="bx bxl-github skills_icon"></i>
                             <div>
                                 <h3 className="skills_name">GitHub</h3>
-                                <span className="skills_level">Proficiency</span>
+                                <span className="skills_level">
+                                    Proficiency
+                                </span>
                             </div>
                         </div>
                         <div className="skills_data">
-                            <i className='bx bxl-figma skills_icon'></i>
+                            <i className="bx bxl-figma skills_icon"></i>
                             <div>
                                 <h3 className="skills_name">Figma</h3>
-                                <span className="skills_level">Proficiency</span>
+                                <span className="skills_level">
+                                    Proficiency
+                                </span>
                             </div>
                         </div>
                         <div className="skills_data">
-                            <i className='bx bxl-visual-studio skills_icon'></i>
+                            <i className="bx bxl-visual-studio skills_icon"></i>
                             <div>
                                 <h3 className="skills_name">VSCode</h3>
-                                <span className="skills_level">Proficiency</span>
+                                <span className="skills_level">
+                                    Proficiency
+                                </span>
                             </div>
                         </div>
                         <div className="skills_data">
-                            <i className='bx bx-terminal skills_icon'></i>
+                            <i className="bx bx-terminal skills_icon"></i>
                             <div>
                                 <h3 className="skills_name">Terminal</h3>
-                                <span className="skills_level">Proficiency</span>
+                                <span className="skills_level">
+                                    Proficiency
+                                </span>
                             </div>
                         </div>
                     </div>
 
                     <div className="skills_group">
                         <div className="skills_data">
-                            <i className='bx bxl-git skills_icon'></i>
+                            <i className="bx bxl-git skills_icon"></i>
                             <div>
                                 <h3 className="skills_name">Git</h3>
-                                <span className="skills_level">Proficiency</span>
+                                <span className="skills_level">
+                                    Proficiency
+                                </span>
                             </div>
                         </div>
                         <div className="skills_data">
@@ -58,14 +73,16 @@ const Tools = () => {
                             </div>
                         </div>
                         <div className="skills_data">
-                            <i className='bx bxl-markdown skills_icon'></i>
+                            <i className="bx bxl-markdown skills_icon"></i>
                             <div>
                                 <h3 className="skills_name">Markdown</h3>
-                                <span className="skills_level">Proficiency</span>
+                                <span className="skills_level">
+                                    Proficiency
+                                </span>
                             </div>
                         </div>
                         <div className="skills_data">
-                            <i className='bx bxl-gitlab skills_icon'></i>
+                            <i className="bx bxl-gitlab skills_icon"></i>
                             <div>
                                 <h3 className="skills_name">GitLab</h3>
                                 <span className="skills_level">Familiar</span>
@@ -73,10 +90,9 @@ const Tools = () => {
                         </div>
                     </div>
                 </motion.div>
-
             </div>
         </div>
-    );
-};
+    )
+}
 
-export default Tools;
+export default Tools

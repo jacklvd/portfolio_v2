@@ -1,231 +1,248 @@
 #journey {
-  background-color: var(--custom-color);
+    background-color: var(--custom-color);
 }
 
 #journey::before,
 #journey::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .experience_container {
-  max-width: 992px;
+    max-width: 992px;
 }
 
 .experience_tabs {
-  display: flex;
-  justify-content: center;
-  margin-bottom: var(--mb-2);
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--mb-2);
 }
 
 .experience_button {
-  font-size: var(--h3-font-size);
-  font-weight: var(--font-medium);
-  color: var(--title-color);
-  margin: 0 var(--mb-1);
-  cursor: pointer;
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    color: var(--title-color);
+    margin: 0 var(--mb-1);
+    cursor: pointer;
 }
 
 .experience_button:hover {
-  color: var(--title-color-dark);
+    color: var(--title-color-dark);
 }
 
 .experience_icon {
-  font-size: 1.8rem;
-  margin-right: var(--mb-0-25);
+    font-size: 1.8rem;
+    margin-right: var(--mb-0-25);
 }
 
 .experience_active {
-  color: var(--title-color-dark);
+    color: var(--title-color-dark);
 }
 
 .experience_sections {
-  display: grid;
-  grid-template-columns: 0.5fr;
-  justify-content: center;
+    display: grid;
+    grid-template-columns: 0.5fr;
+    justify-content: center;
 }
 
 .experience_content {
-  display: none;
+    display: none;
 }
 
 .experience_content-active {
-  display: block;
+    display: block;
 }
 
 .content {
-  color: #cfc9cb;
+    color: #cfc9cb;
 }
 
 .experience_title {
-  font-size: var(--normal-font-size);
-  font-weight: var(--font-medium);
-  color: #f8f6f2;
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    color: #f8f6f2;
+}
+
+.content a {
+    box-shadow: inset 0 0 0 0 #54b3d6;
+    color: #54b3d6;
+    margin: 0 -0.15rem;
+    padding: 0 0.25rem;
+    transition:
+        color 0.3s ease-in-out,
+        box-shadow 0.3s ease-in-out;
+}
+
+.content a:hover {
+    box-shadow: inset 100px 20px 0 20px #54b3d6;
+    color: white;
 }
 
 .experience_subtitle {
-  display: inline-block;
-  font-size: var(--small-font-size);
-  margin-bottom: var(--mb-0-25);
+    display: inline-block;
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-0-25);
+    color: #e0dfd5;
 }
 
 .experience_calendar {
-  font-size: var(--small-font-size);
+    font-size: var(--small-font-size);
 }
 
 ul .experience_detail {
-  list-style: inside;
+    list-style: inside;
 }
 
 /* The actual timeline (the vertical ruler) */
 .timeline {
-  position: relative;
-  max-width: 1200px;
-  margin: 0 auto;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /* The actual timeline (the vertical ruler) */
 .timeline::after {
-  content: "";
-  position: absolute;
-  width: 1.1px;
-  background-color: var(--text-color);
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  margin-left: -3px;
+    content: '';
+    position: absolute;
+    width: 1.1px;
+    background-color: var(--text-color);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
 }
 
 // /* Container around content */
 .container_experience {
-  padding: 10px 40px;
-  position: relative;
-  background-color: inherit;
-  width: 50%;
-  cursor: default;
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+    cursor: default;
 }
 
 // /* The circles on the timeline */
 .container_experience::after {
-  content: "";
-  position: absolute;
-  width: 6px;
-  height: 6px;
-  right: -5px;
-  background-color: var(--text-color);
-  border: 4px solid var(--text-color);
-  top: 23.8px;
-  border-radius: 50%;
-  z-index: 1;
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    right: -5px;
+    background-color: var(--text-color);
+    border: 4px solid var(--text-color);
+    top: 23.8px;
+    border-radius: 50%;
+    z-index: 1;
 }
 
 // /* Place the container to the left */
 .left {
-  left: 0;
+    left: 0;
 }
 
 // /* Place the container to the right */
 .right {
-  left: 50%;
+    left: 50%;
 }
 
 // /* Add arrows to the left container (pointing right) */
 .left::before {
-  content: "";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  right: 30px;
-  // border: medium solid var(--custom-box-color);
-  // border-width: 10px 0 10px 10px;
-  // border-color: transparent transparent transparent var(--custom-box-color);
-  border-color: var(--custom-box-color);
-  /* border-width: medium; */
-  border-bottom: 10px solid transparent;
-  border-top: 10px solid transparent;
-  border-left: 11.2px solid var(--custom-box-color);
-  border-right: 0 solid transparent;
+    content: '';
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    // border: medium solid var(--custom-box-color);
+    // border-width: 10px 0 10px 10px;
+    // border-color: transparent transparent transparent var(--custom-box-color);
+    border-color: var(--custom-box-color);
+    /* border-width: medium; */
+    border-bottom: 10px solid transparent;
+    border-top: 10px solid transparent;
+    border-left: 11.2px solid var(--custom-box-color);
+    border-right: 0 solid transparent;
 
-  // border-color: transparent transparent var(--custom-box-color);
+    // border-color: transparent transparent var(--custom-box-color);
 }
 
 // /* Add arrows to the right container (pointing left) */
 .right::before {
-  content: "";
-  height: 0;
-  position: absolute;
-  top: 20px;
-  width: 0;
-  z-index: 1;
-  left: 30px;
-  // border: medium solid var(--custom-box-color);
-  // border-width: 10px 10px 10px 0;
-  // border-color: transparent var(--custom-box-color) transparent transparent;
-  border-color: var(--custom-box-color);
-  border-bottom: 10px solid transparent;
-  border-top: 10px solid transparent;
-  border-left: 0 solid transparent;
-  border-right: 11.2px solid var(--custom-box-color);
+    content: '';
+    height: 0;
+    position: absolute;
+    top: 20px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    // border: medium solid var(--custom-box-color);
+    // border-width: 10px 10px 10px 0;
+    // border-color: transparent var(--custom-box-color) transparent transparent;
+    border-color: var(--custom-box-color);
+    border-bottom: 10px solid transparent;
+    border-top: 10px solid transparent;
+    border-left: 0 solid transparent;
+    border-right: 11.2px solid var(--custom-box-color);
 }
 
 // /* Fix the circle for containers on the right side */
 .right::after {
-  left: -9px;
+    left: -9px;
 }
 
 // /* The actual content */
 .content {
-  padding: 20px 30px;
-  background-color: var(--custom-box-color);
-  position: relative;
-  border-radius: 6px;
+    padding: 20px 30px;
+    background-color: var(--custom-box-color);
+    position: relative;
+    border-radius: 6px;
 }
 
 /*============== BREAKPOINTS ==============*/
 
 /* for large devices */
 @media screen and (max-width: 992px) {
-  .experience_container {
-    margin-left: auto;
-    margin-right: auto;
-  }
+    .experience_container {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 /* for medium devices */
 @media screen and (max-width: 695px) {
-  .experience_button {
-    margin: 0 var(--mb-0-75);
-  }
+    .experience_button {
+        margin: 0 var(--mb-0-75);
+    }
 
-  /* Place the timeline to the left */
-  .timeline::after {
-    left: 15px;
-  }
+    /* Place the timeline to the left */
+    .timeline::after {
+        left: 15px;
+    }
 
-  /* Full-width containers */
-  .container_experience {
-    width: 100%;
-    padding-left: 30px;
-    padding-right: 20px;
-  }
+    /* Full-width containers */
+    .container_experience {
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 20px;
+    }
 
-  /* Make sure that all arrows are pointing leftwards */
-  .container_experience::before {
-    left: 20px;
-    border: medium solid var(--custom-color);
-    border-width: 10px 10px 10px 0;
-    border-color: transparent var(--custom-color) transparent transparent;
-  }
+    /* Make sure that all arrows are pointing leftwards */
+    .container_experience::before {
+        left: 20px;
+        border: medium solid var(--custom-color);
+        border-width: 10px 10px 10px 0;
+        border-color: transparent var(--custom-color) transparent transparent;
+    }
 
-  /* Make sure all circles are at the same spot */
-  .left::after,
-  .right::after {
-    left: 5px;
-  }
+    /* Make sure all circles are at the same spot */
+    .left::after,
+    .right::after {
+        left: 5px;
+    }
 
-  /* Make all right containers behave like the left ones */
-  .right {
-    left: 0%;
-  }
+    /* Make all right containers behave like the left ones */
+    .right {
+        left: 0%;
+    }
 }
