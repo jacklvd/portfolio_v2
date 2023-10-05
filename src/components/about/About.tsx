@@ -54,7 +54,7 @@ const About = () => {
     return (
         <section className="about section" id="about">
             <h2 className="section_title" style={{ color: "var(--title-color-dark)" }}>About Me</h2>
-            <span className="section_subtitle">Few Things of Me</span>
+            <span className="section_subtitle">Let's get to know me</span>
 
             <div className="about_container container grid">
                 <img src={Hero} alt="Myself" className="about_img" />

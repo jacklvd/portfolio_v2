@@ -34,7 +34,7 @@ const Description = () => {
                         }}
                     />
                 </h3>
-                <p className="home_description">Welcome to my website, where I share both of my professional and personal journey</p>
+                <p className="home_description">Welcome to my world, where it is full of stars even in the morning!</p>
 
                 <Link to="/portfolio" className="button button-flex home_button">
                     P O R T F O L I O <i className="uil uil-arrow-right button_icon"></i>
