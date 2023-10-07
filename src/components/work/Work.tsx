@@ -40,6 +40,8 @@ const Work = () => {
                                         <a
                                             href={work.source}
                                             className="btn btn--accent"
+                                            target='_blank'
+                                            rel="noreferrer"
                                         >
                                             SOURCE{' '}
                                             <i className="fa-brands fa-square-github work_button-icon"></i>
