@@ -103,3 +103,29 @@ a .media_icon {
         color: #000;
     }
 }
+
+
+// media screen size 280px
+@media screen and (max-width: 320px) {
+    .contact_container {
+        padding: 0.8rem;
+    }
+
+    .media_box {
+        width: 60px;
+        padding: 0.6rem 0.6rem;
+    }
+
+    a .media_icon {
+        font-size: 1.2rem;
+    }
+
+    .media_title {
+        display: none;
+    }
+
+    .contact_content {
+        font-size: var(--small-font-size);
+        color: #000;
+    }
+}

@@ -5,6 +5,7 @@ import Journey from '../../components/journey/Journey'
 import Work from '../../components/work/Work'
 import Polaroids from '../../components/polaroid/Polaroids'
 import Contact from '../../components/contact/Contact'
+import Footer from '../../components/Footer'
 
 const Portfolio = () => {
     return (
@@ -18,6 +19,7 @@ const Portfolio = () => {
                 <Work />
                 <Polaroids />
                 <Contact />
+                <Footer />
             </main>
         </>
     )
