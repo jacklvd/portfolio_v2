@@ -5,10 +5,10 @@ import generateSitemap from 'vite-plugin-pages-sitemap'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-    plugins: [
-        react(),
-        Pages({
-            onRoutesGenerated: (routes) => generateSitemap({ routes }),
-        }),
-    ],
+  plugins: [
+    react(),
+    Pages({
+      onRoutesGenerated: (routes) => generateSitemap({ routes }),
+    }),
+  ],
 })

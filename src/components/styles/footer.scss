@@ -1,20 +1,20 @@
 .footer_section {
-    background-color: var(--custom-color);
-    padding: 1.5rem 0 1.2rem;
+  background-color: var(--custom-color);
+  padding: 1.5rem 0 1.2rem;
 }
 
 .footer {
-    text-align: center;
-    cursor: default;
+  text-align: center;
+  cursor: default;
 }
 
 // media screen size 280px
 @media screen and (max-width: 280px) {
-    .enclosed {
-        font-size: 0.8rem;
-    }
+  .enclosed {
+    font-size: 0.8rem;
+  }
 
-    .year {
-        font-size: 0.8rem;
-    }
+  .year {
+    font-size: 0.8rem;
+  }
 }

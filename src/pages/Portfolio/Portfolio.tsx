@@ -8,20 +8,20 @@ import Contact from '../../components/contact/Contact'
 import Footer from '../../components/Footer'
 
 const Portfolio = () => {
-    return (
-        <>
-            <NavBar />
+  return (
+    <>
+      <NavBar />
 
-            <main className="main">
-                <About />
-                <Skills />
-                <Journey />
-                <Work />
-                <Polaroids />
-                <Contact />
-                <Footer />
-            </main>
-        </>
-    )
+      <main className="main">
+        <About />
+        <Skills />
+        <Journey />
+        <Work />
+        <Polaroids />
+        <Contact />
+        <Footer />
+      </main>
+    </>
+  )
 }
 export default Portfolio
