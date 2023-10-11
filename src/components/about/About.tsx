@@ -61,7 +61,7 @@ const About = () => {
       <span className="section_subtitle">Let's get to know me</span>
 
       <div className="about_container container grid">
-        <img src={Hero} alt="Myself" className="about_img" />
+        <img src={Hero} alt="Myself" className="about_img" loading="lazy" />
 
         <div className="about_data">
           <motion.div

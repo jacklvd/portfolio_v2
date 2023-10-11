@@ -100,6 +100,7 @@ const Polaroids = () => {
                       src={urlFor(polaroid.images).url()}
                       alt={polaroid.title}
                       onLoad={handleImageLoad}
+                      loading="lazy"
                     />
                     <figcaption className="img_caption">
                       {polaroid.date}
