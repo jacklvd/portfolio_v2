@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
-import Hero from '../../assets/images/hero.png'
+import Hero from '../../assets/images/hero.jpg'
 import Resume from '../../assets/files/Resume.pdf'
 import '../styles/about.scss'
 
