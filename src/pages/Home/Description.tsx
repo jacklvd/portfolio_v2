@@ -44,6 +44,8 @@ const Description = () => {
         </Link>
         <a
           href="https://blog.jackvd.com"
+          target="_blank"
+          rel="noopener noreferrer"
           className="button button-flex home_button"
         >
           B L O G <i className="uil uil-arrow-right button_icon"></i>
