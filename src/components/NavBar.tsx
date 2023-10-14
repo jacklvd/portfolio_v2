@@ -66,12 +66,14 @@ const NavBar = () => {
               </div>
             </li>
             <li className="nav_item">
-              <div
+              <a
+                href="https://blog.jackvd.com"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="nav_link"
-                onClick={() => smoothScrollTo('contact')}
               >
-                <i className="uil uil-message nav_icon"></i> Contact
-              </div>
+                <i className="uil uil-folder nav_icon"></i> Blog
+              </a>
             </li>
             <li className="nav_item">
               <a

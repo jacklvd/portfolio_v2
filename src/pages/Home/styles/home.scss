@@ -79,6 +79,10 @@
   border-radius: 0.5rem;
 }
 
+.button_portfolio {
+  margin-right: 1rem;
+}
+
 .home_button:hover {
   transform: translate(0.25rem, 0.25rem);
   box-shadow: 0.125rem 0.125rem #121212;
@@ -3468,7 +3472,7 @@
 /*============== BREAKPOINTS ==============*/
 
 /* for large devices */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
   .home_content {
     grid-template-columns: 100px repeat(2, 1fr);
     column-gap: 1.25rem;

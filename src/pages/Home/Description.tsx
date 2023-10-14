@@ -36,9 +36,20 @@ const Description = () => {
           Welcome to my world, where it is full of stars even in the morning!
         </p>
 
-        <Link to="/portfolio" className="button button-flex home_button">
+        <Link
+          to="/portfolio"
+          className="button button-flex home_button button_portfolio"
+        >
           P O R T F O L I O <i className="uil uil-arrow-right button_icon"></i>
         </Link>
+        <a
+          href="https://blog.jackvd.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="button button-flex home_button"
+        >
+          B L O G <i className="uil uil-arrow-right button_icon"></i>
+        </a>
       </motion.div>
     </div>
   )
